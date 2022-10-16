@@ -35,6 +35,7 @@
             this.txtNumberB = new System.Windows.Forms.TextBox();
             this.txtResult = new System.Windows.Forms.TextBox();
             this.btnCong = new System.Windows.Forms.Button();
+            this.btnTru = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -97,11 +98,22 @@
             this.btnCong.UseVisualStyleBackColor = true;
             this.btnCong.Click += new System.EventHandler(this.btnCong_Click);
             // 
+            // btnTru
+            // 
+            this.btnTru.Location = new System.Drawing.Point(308, 261);
+            this.btnTru.Name = "btnTru";
+            this.btnTru.Size = new System.Drawing.Size(115, 51);
+            this.btnTru.TabIndex = 2;
+            this.btnTru.Text = "Tru";
+            this.btnTru.UseVisualStyleBackColor = true;
+            this.btnTru.Click += new System.EventHandler(this.btnTru_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(837, 507);
+            this.Controls.Add(this.btnTru);
             this.Controls.Add(this.btnCong);
             this.Controls.Add(this.txtResult);
             this.Controls.Add(this.txtNumberB);
@@ -110,7 +122,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -127,6 +139,7 @@
         private System.Windows.Forms.TextBox txtNumberB;
         private System.Windows.Forms.TextBox txtResult;
         private System.Windows.Forms.Button btnCong;
+        private System.Windows.Forms.Button btnTru;
     }
 }
 
