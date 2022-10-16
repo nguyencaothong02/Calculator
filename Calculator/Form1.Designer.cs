@@ -34,7 +34,7 @@
             this.txtNumberA = new System.Windows.Forms.TextBox();
             this.txtNumberB = new System.Windows.Forms.TextBox();
             this.txtResult = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnCong = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -87,21 +87,22 @@
             this.txtResult.Size = new System.Drawing.Size(237, 27);
             this.txtResult.TabIndex = 1;
             // 
-            // button1
+            // btnCong
             // 
-            this.button1.Location = new System.Drawing.Point(126, 261);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(115, 51);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Cộng";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnCong.Location = new System.Drawing.Point(126, 261);
+            this.btnCong.Name = "btnCong";
+            this.btnCong.Size = new System.Drawing.Size(115, 51);
+            this.btnCong.TabIndex = 2;
+            this.btnCong.Text = "Cộng";
+            this.btnCong.UseVisualStyleBackColor = true;
+            this.btnCong.Click += new System.EventHandler(this.btnCong_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(837, 507);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnCong);
             this.Controls.Add(this.txtResult);
             this.Controls.Add(this.txtNumberB);
             this.Controls.Add(this.txtNumberA);
@@ -125,7 +126,7 @@
         private System.Windows.Forms.TextBox txtNumberA;
         private System.Windows.Forms.TextBox txtNumberB;
         private System.Windows.Forms.TextBox txtResult;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCong;
     }
 }
 
